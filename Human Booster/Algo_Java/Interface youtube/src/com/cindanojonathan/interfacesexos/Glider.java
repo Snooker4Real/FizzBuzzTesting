@@ -1,5 +1,4 @@
-import java.security.PublicKey;
-
+package com.cindanojonathan.interfacesexos;
 public class Glider extends Vehicle{
     public  Glider(){
         this.mMovementSpeed= 0;
