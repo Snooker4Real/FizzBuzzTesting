@@ -90,5 +90,7 @@
          */
 
         // Lire les entrées console
-        
+        print("Entrez votre nom:")
+        val nom =  readLine()
+        println("Salut : $nom")
     }
