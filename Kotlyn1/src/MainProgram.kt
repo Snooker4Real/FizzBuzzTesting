@@ -87,10 +87,40 @@
         max = if (a >b) a else b
         println("max : $max")
 
-         */
 
-        // Lire les entrées console
+
+        // -----------  Lire les entrées console  ----------------
+        // Lire des strings, des entiers
         print("Entrez votre nom:")
+
         val nom =  readLine()
-        println("Salut : $nom")
+            print("Entrez votre age:")
+        val age =  readLine()!!.toInt()
+        var age2 = age + 2
+        println("Ton âge dans 2ans : $age2")
+
+
+
+        println("entrez le numero 1")
+        val numero1 = readLine()!!.toInt()
+        println("entrez  le numero 2 :")
+        val numero2 = readLine()!!.toInt()
+
+        println("$numero1 + $numero2 = ${numero1+numero2}")
+         */
+        // switch == when
+        println("Entrez le numero d'un jour")
+        val jour = readLine()!!.toInt()
+        var nomDuJour = when (jour){
+            1 -> "lundi"
+            2 -> "mardi"
+            3 -> "mercredi"
+            4 -> "jeudi"
+            5 -> "vendredi"
+            6 -> "samedi"
+            7 -> "dimanche"
+            else -> ("Vous devez rentre un numero de jour valide ")
+        }
+
+        print("On est le $nomDuJour")
     }
